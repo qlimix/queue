@@ -1,0 +1,23 @@
+{
+    "name": "qlimix/queue",
+    "type": "package",
+    "license": "LGPL-3.0-only",
+    "authors": [
+        {
+            "name": "frank",
+            "email": "frank@qlimix.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Qlimix\\Queue\\": "src/"
+        }
+    },
+    "require-dev": {
+    },
+    "suggest": {
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
