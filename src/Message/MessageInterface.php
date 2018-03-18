@@ -25,7 +25,7 @@ interface MessageInterface
      *
      * @return string
      */
-    public function getName(): string;
+    public static function getName(): string;
 
     /**
      * Serialize object into an array
