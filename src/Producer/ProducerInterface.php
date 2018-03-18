@@ -4,6 +4,7 @@ namespace Qlimix\Queue\Producer;
 
 use Qlimix\Queue\Envelope\EnvelopeInterface;
 use Qlimix\Queue\Producer\Exception\ProducerException;
+use Qlimix\Queue\Producer\Exception\UnroutableEnvelopeException;
 
 interface ProducerInterface
 {
@@ -11,6 +12,7 @@ interface ProducerInterface
      * @param EnvelopeInterface $envelope
      *
      * @throws ProducerException
+     * @throws UnroutableEnvelopeException
      */
     public function publish(EnvelopeInterface $envelope): void;
 }

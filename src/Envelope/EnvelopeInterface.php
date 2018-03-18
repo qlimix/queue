@@ -7,11 +7,15 @@ use Qlimix\Queue\Message\MessageInterface;
 interface EnvelopeInterface
 {
     /**
-     * The unique identifier of the exchange
+     * The route the envelope takes to be
+     *  received by the recipient(s)
+     *
+     * e.g. Send it on route 'HelloWorld' which could be
+     *  anything the producer could route to.
      *
      * @return string
      */
-    public function getExchangeName(): string;
+    public function getRoute(): string;
 
     /**
      * @return MessageInterface

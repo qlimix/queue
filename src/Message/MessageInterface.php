@@ -5,7 +5,7 @@ namespace Qlimix\Queue\Message;
 interface MessageInterface
 {
     /**
-     * The unique identifier of the message
+     * The unique identifier of the message object
      *
      * @return string
      */
