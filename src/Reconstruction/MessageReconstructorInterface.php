@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Qlimix\MessageBus\Reconstruction;
+namespace Qlimix\Queue\Reconstruction;
 
 use Qlimix\Queue\Message\MessageInterface;
 
