@@ -6,7 +6,7 @@ use Qlimix\Queue\Envelope\EnvelopeInterface;
 use Qlimix\Queue\Exchange\ExchangeInterface;
 use Qlimix\Queue\Producer\Exception\ProducerException;
 
-final class Producer implements ProducerInterface
+final class ExchangeProducer implements ProducerInterface
 {
     /** @var ExchangeInterface */
     private $exchange;
