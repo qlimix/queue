@@ -2,16 +2,16 @@
 
 namespace Qlimix\Queue\Reconstruction;
 
-use Qlimix\Queue\Message\MessageInterface;
+use Qlimix\Serializable\SerializableInterface;
 
 interface MessageReconstructorInterface
 {
     /**
-     * @param string $message
+     * @param string $messagegiot 
      *
-     * @return MessageInterface
+     * @return SerializableInterface
      */
-    public function reconstruct(string $message): MessageInterface;
+    public function reconstruct(string $message): SerializableInterface;
 
     /**
      * @param string $message

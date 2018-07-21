@@ -2,14 +2,14 @@
 
 namespace Qlimix\Queue\Job;
 
-use Qlimix\Queue\Message\MessageInterface;
+use Qlimix\Serializable\SerializableInterface;
 
 final class Job
 {
     /** @var string */
     private $id;
 
-    /** @var MessageInterface */
+    /** @var SerializableInterface */
     private $message;
 
     /** @var \DateTimeImmutable */
@@ -17,10 +17,10 @@ final class Job
 
     /**
      * @param string $id
-     * @param MessageInterface $message
+     * @param SerializableInterface $message
      * @param \DateTimeImmutable $addedAt
      */
-    public function __construct(string $id, MessageInterface $message, \DateTimeImmutable $addedAt)
+    public function __construct(string $id, SerializableInterface $message, \DateTimeImmutable $addedAt)
     {
         $this->id = $id;
         $this->message = $message;
@@ -48,7 +48,7 @@ final class Job
     {
         return new self(
             $data['id'],
-            MessageInterface::deserialize($data['message']),
+            SerializableInterface::deserialize($data['message']),
             \DateTimeImmutable::createFromFormat(DATE_ATOM, $data['addedAt'])
         );
     }
@@ -62,9 +62,9 @@ final class Job
     }
 
     /**
-     * @return MessageInterface
+     * @return SerializableInterface
      */
-    public function getMessage(): MessageInterface
+    public function getMessage(): SerializableInterface
     {
         return $this->message;
     }
