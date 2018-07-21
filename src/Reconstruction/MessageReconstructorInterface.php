@@ -7,7 +7,7 @@ use Qlimix\Serializable\SerializableInterface;
 interface MessageReconstructorInterface
 {
     /**
-     * @param string $messagegiot 
+     * @param string $message
      *
      * @return SerializableInterface
      */
