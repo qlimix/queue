@@ -2,7 +2,7 @@
 
 namespace Qlimix\Queue\Consumer;
 
-use Qlimix\Queue\Consumer\Exception\ConsumerException;
+use Qlimix\Queue\Consumer\Exception\QueueConsumerException;
 use Qlimix\Queue\Queue\QueueMessage;
 
 interface QueueConsumerInterface
@@ -12,7 +12,14 @@ interface QueueConsumerInterface
      *
      * @return QueueMessage[]
      *
-     * @throws ConsumerException
+     * @throws QueueConsumerException
      */
     public function consume(int $amount): array;
+
+    /**
+     * @param QueueMessage $message
+     *
+     * @throws QueueConsumerException
+     */
+    public function acknowledge(QueueMessage $message): void;
 }
