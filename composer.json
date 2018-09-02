@@ -13,20 +13,11 @@
             "Qlimix\\Queue\\": "src/"
         }
     },
-    "require": {
-        "qlimix/serializable": "dev-master"
-    },
     "suggest": {
     },
     "config": {
         "sort-packages": true
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "git@bitbucket.org:qlimix/serializable.git"
-        }
-    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
