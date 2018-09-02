@@ -8,13 +8,11 @@ use Qlimix\Queue\Queue\QueueMessage;
 interface QueueConsumerInterface
 {
     /**
-     * @param int $amount
-     *
      * @return QueueMessage[]
      *
      * @throws QueueConsumerException
      */
-    public function consume(int $amount): array;
+    public function consume(): array;
 
     /**
      * @param QueueMessage $message
