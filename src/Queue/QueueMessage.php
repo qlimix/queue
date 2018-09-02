@@ -2,24 +2,22 @@
 
 namespace Qlimix\Queue\Queue;
 
-use Qlimix\Queue\Job\Job;
-
 final class QueueMessage
 {
     /** @var string */
     private $id;
 
-    /** @var Job */
-    private $job;
+    /** @var string */
+    private $message;
 
     /**
      * @param string $id
-     * @param Job $job
+     * @param string $job
      */
-    public function __construct(string $id, Job $job)
+    public function __construct(string $id, string $job)
     {
         $this->id = $id;
-        $this->job = $job;
+        $this->message = $job;
     }
 
     /**
@@ -31,10 +29,10 @@ final class QueueMessage
     }
 
     /**
-     * @return Job
+     * @return string
      */
-    public function getJob(): Job
+    public function getString(): string
     {
-        return $this->job;
+        return $this->message;
     }
 }
