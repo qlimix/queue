@@ -16,7 +16,7 @@ interface EnvelopeInterface
     public function getRoute(): string;
 
     /**
-     * @return string
+     * @return array
      */
-    public function getMessage(): string;
+    public function getMessage(): array;
 }
