@@ -2,7 +2,6 @@
 
 namespace Qlimix\Queue\Exchange;
 
-use Qlimix\Queue\Envelope\EnvelopeInterface;
 use Qlimix\Queue\Exchange\Exception\ExchangeException;
 use Qlimix\Queue\Exchange\Exception\TimeOutException;
 use Qlimix\Queue\Exchange\Exception\UnacknowledgedException;
@@ -10,11 +9,12 @@ use Qlimix\Queue\Exchange\Exception\UnacknowledgedException;
 interface ExchangeInterface
 {
     /**
-     * @param EnvelopeInterface $envelope
+     * @param string $route
+     * @param string $message
      *
      * @throws ExchangeException
      * @throws UnacknowledgedException
      * @throws TimeOutException
      */
-    public function exchange(EnvelopeInterface $envelope): void;
+    public function exchange(string $route, string $message): void;
 }
