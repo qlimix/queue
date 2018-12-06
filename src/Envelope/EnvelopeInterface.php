@@ -2,7 +2,7 @@
 
 namespace Qlimix\Queue\Envelope;
 
-use Qlimix\Serializable\SerializableInterface;
+use Qlimix\Serialize\SerializableInterface;
 
 interface EnvelopeInterface
 {
