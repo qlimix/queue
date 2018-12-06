@@ -14,7 +14,7 @@
         }
     },
     "require": {
-        "qlimix/serializable": "dev-master"
+        "qlimix/serialize": "dev-master"
     },
     "suggest": {
     },
@@ -24,7 +24,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url":  "git@bitbucket.org:qlimix/serializable.git"
+            "url":  "git@bitbucket.org:qlimix/serialize.git"
         }
     ],
     "minimum-stability": "dev",
