@@ -2,6 +2,8 @@
 
 namespace Qlimix\Queue\Envelope;
 
+use Qlimix\Serializable\SerializableInterface;
+
 interface EnvelopeInterface
 {
     /**
@@ -16,7 +18,7 @@ interface EnvelopeInterface
     public function getRoute(): string;
 
     /**
-     * @return array
+     * @return SerializableInterface
      */
-    public function getMessage(): array;
+    public function getMessage(): SerializableInterface;
 }
