@@ -9,11 +9,11 @@ use Qlimix\Queue\Exchange\Exception\UnacknowledgedException;
 interface BatchExchangeInterface
 {
     /**
-     * @param ExchangeMessage[] $envelopes
+     * @param ExchangeMessage[] $messages
      *
      * @throws ExchangeException
      * @throws UnacknowledgedException
      * @throws TimeOutException
      */
-    public function exchange(array $envelopes): void;
+    public function exchange(array $messages): void;
 }
