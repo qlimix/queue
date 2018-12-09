@@ -9,12 +9,11 @@ use Qlimix\Queue\Exchange\Exception\UnacknowledgedException;
 interface ExchangeInterface
 {
     /**
-     * @param string $route
-     * @param string $message
+     * @param ExchangeMessage
      *
      * @throws ExchangeException
      * @throws UnacknowledgedException
      * @throws TimeOutException
      */
-    public function exchange(string $route, string $message): void;
+    public function exchange(ExchangeMessage $message): void;
 }

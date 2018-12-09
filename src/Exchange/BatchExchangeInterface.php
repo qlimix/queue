@@ -2,7 +2,6 @@
 
 namespace Qlimix\Queue\Exchange;
 
-use Qlimix\Queue\Envelope\EnvelopeInterface;
 use Qlimix\Queue\Exchange\Exception\ExchangeException;
 use Qlimix\Queue\Exchange\Exception\TimeOutException;
 use Qlimix\Queue\Exchange\Exception\UnacknowledgedException;
@@ -10,7 +9,7 @@ use Qlimix\Queue\Exchange\Exception\UnacknowledgedException;
 interface BatchExchangeInterface
 {
     /**
-     * @param EnvelopeInterface[] $envelopes
+     * @param ExchangeMessage[] $envelopes
      *
      * @throws ExchangeException
      * @throws UnacknowledgedException
