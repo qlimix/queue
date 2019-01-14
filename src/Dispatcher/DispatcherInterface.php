@@ -3,13 +3,12 @@
 namespace Qlimix\Queue\Dispatcher;
 
 use Qlimix\Queue\Dispatcher\Exception\DispatchException;
+use Qlimix\Queue\Queue\QueueMessage;
 
 interface DispatcherInterface
 {
     /**
-     * @param mixed $message
-     *
      * @throws DispatchException
      */
-    public function dispatch($message): void;
+    public function dispatch(QueueMessage $message): void;
 }
