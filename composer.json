@@ -21,12 +21,6 @@
     "config": {
         "sort-packages": true
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "git@bitbucket.org:qlimix/serialize.git"
-        }
-    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
