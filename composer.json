@@ -13,11 +13,6 @@
             "Qlimix\\Queue\\": "src/"
         }
     },
-    "require": {
-        "qlimix/serialize": "dev-master"
-    },
-    "suggest": {
-    },
     "config": {
         "sort-packages": true
     },
