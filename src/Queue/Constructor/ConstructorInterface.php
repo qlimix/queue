@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Qlimix\Queue\Queue;
+namespace Qlimix\Queue\Queue\Constructor;
 
 use Qlimix\Queue\Queue\Constructor\Exception\ConstructorException;
 
