@@ -10,28 +10,18 @@ final class QueueMessage
     /** @var string */
     private $message;
 
-    /**
-     * @param string $id
-     * @param string $job
-     */
     public function __construct(string $id, string $job)
     {
         $this->id = $id;
         $this->message = $job;
     }
 
-    /**
-     * @return string
-     */
     public function getId(): string
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
-    public function getString(): string
+    public function getMessage(): string
     {
         return $this->message;
     }
