@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Qlimix\Queue\Exchange\Exception;
+namespace Qlimix\Queue\Exchange\Construtor\Exception;
 
 use Exception;
 
