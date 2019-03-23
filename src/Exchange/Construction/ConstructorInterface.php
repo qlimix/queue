@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Qlimix\Queue\Exchange\Constructor;
+namespace Qlimix\Queue\Exchange\Construction;
 
-use Qlimix\Queue\Exchange\Constructor\Exception\ConstructorException;
+use Qlimix\Queue\Exchange\Construction\Exception\ConstructorException;
 
 interface ConstructorInterface
 {
