@@ -2,7 +2,7 @@
 
 namespace Qlimix\Queue\Queue\Constructor;
 
-use Qlimix\Queue\Queue\Constructor\Exception\ConstructorException;
+use Qlimix\Queue\Queue\Construction\Exception\ConstructorException;
 
 interface ConstructorInterface
 {
