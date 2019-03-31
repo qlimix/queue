@@ -10,10 +10,10 @@ final class QueueMessage
     /** @var string */
     private $message;
 
-    public function __construct(string $id, string $job)
+    public function __construct(string $id, string $message)
     {
         $this->id = $id;
-        $this->message = $job;
+        $this->message = $message;
     }
 
     public function getId(): string
