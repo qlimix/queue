@@ -10,8 +10,6 @@ interface EnvelopeInterface
      *
      * e.g. Send it on route 'HelloWorld' which could be
      *  anything the producer could route to.
-     *
-     * @return string
      */
     public function getRoute(): string;
 

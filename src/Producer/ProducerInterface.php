@@ -9,8 +9,6 @@ use Qlimix\Queue\Producer\Exception\UnroutableEnvelopeException;
 interface ProducerInterface
 {
     /**
-     * @param EnvelopeInterface $envelope
-     *
      * @throws ProducerException
      * @throws UnroutableEnvelopeException
      */

@@ -2,6 +2,8 @@
 
 namespace Qlimix\Queue\Consumer\Exception;
 
-final class QueueConsumerException extends \Exception
+use Exception;
+
+final class QueueConsumerException extends Exception
 {
 }

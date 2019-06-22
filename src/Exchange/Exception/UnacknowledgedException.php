@@ -2,6 +2,8 @@
 
 namespace Qlimix\Queue\Exchange\Exception;
 
-final class UnacknowledgedException extends \Exception
+use Exception;
+
+final class UnacknowledgedException extends Exception
 {
 }

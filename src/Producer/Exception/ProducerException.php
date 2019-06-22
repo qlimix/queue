@@ -2,6 +2,8 @@
 
 namespace Qlimix\Queue\Producer\Exception;
 
-final class ProducerException extends \Exception
+use Exception;
+
+final class ProducerException extends Exception
 {
 }

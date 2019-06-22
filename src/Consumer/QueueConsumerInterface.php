@@ -15,8 +15,6 @@ interface QueueConsumerInterface
     public function consume(): array;
 
     /**
-     * @param QueueMessage $message
-     *
      * @throws QueueConsumerException
      */
     public function acknowledge(QueueMessage $message): void;

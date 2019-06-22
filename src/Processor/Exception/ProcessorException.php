@@ -2,6 +2,8 @@
 
 namespace Qlimix\Queue\Processor\Exception;
 
-final class ProcessorException extends \Exception
+use Exception;
+
+final class ProcessorException extends Exception
 {
 }

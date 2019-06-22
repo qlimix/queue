@@ -9,8 +9,6 @@ use Qlimix\Queue\Exchange\Exception\UnacknowledgedException;
 interface ExchangeInterface
 {
     /**
-     * @param ExchangeMessage
-     *
      * @throws ExchangeException
      * @throws UnacknowledgedException
      * @throws TimeOutException

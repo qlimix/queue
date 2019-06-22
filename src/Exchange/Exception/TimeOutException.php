@@ -2,6 +2,8 @@
 
 namespace Qlimix\Queue\Exchange\Exception;
 
-final class TimeOutException extends \Exception
+use Exception;
+
+final class TimeOutException extends Exception
 {
 }

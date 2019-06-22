@@ -2,6 +2,8 @@
 
 namespace Qlimix\Queue\Producer\Exception;
 
-final class UnroutableEnvelopeException extends \Exception
+use Exception;
+
+final class UnroutableEnvelopeException extends Exception
 {
 }

@@ -2,7 +2,7 @@
 
 namespace Qlimix\Queue\Dispatcher\Exception;
 
-use \Exception;
+use Exception;
 
 final class DispatchException extends Exception
 {
