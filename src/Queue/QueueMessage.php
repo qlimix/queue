@@ -4,11 +4,9 @@ namespace Qlimix\Queue\Queue;
 
 final class QueueMessage
 {
-    /** @var string */
-    private $id;
+    private string $id;
 
-    /** @var string */
-    private $message;
+    private string $message;
 
     public function __construct(string $id, string $message)
     {
