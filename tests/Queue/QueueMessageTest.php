@@ -3,18 +3,18 @@
 namespace Qlimix\Tests\Queue\Queue;
 
 use PHPUnit\Framework\TestCase;
-use Qlimix\Queue\Exchange\ExchangeMessage;
+use Qlimix\Queue\Queue\QueueMessage;
 
 final class QueueMessageTest extends TestCase
 {
     public function testShouldDto(): void
     {
-        $route = 'foo';
+        $id = 'foo';
         $message = 'bar';
 
-        $queueMessage = new ExchangeMessage($route, $message);
+    $queueMessage = new QueueMessage($id, $message);
 
-        $this->assertSame($route, $queueMessage->getRoute());
+        $this->assertSame($id, $queueMessage->getId());
         $this->assertSame($message, $queueMessage->getMessage());
     }
 }
