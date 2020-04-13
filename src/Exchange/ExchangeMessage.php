@@ -4,11 +4,9 @@ namespace Qlimix\Queue\Exchange;
 
 final class ExchangeMessage
 {
-    /** @var string */
-    private $route;
+    private string $route;
 
-    /** @var string */
-    private $message;
+    private string $message;
 
     public function __construct(string $route, string $message)
     {
