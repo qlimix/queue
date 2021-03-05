@@ -12,7 +12,7 @@ final class QueueMessageTest extends TestCase
         $id = 'foo';
         $message = 'bar';
 
-    $queueMessage = new QueueMessage($id, $message);
+        $queueMessage = new QueueMessage($id, $message);
 
         $this->assertSame($id, $queueMessage->getId());
         $this->assertSame($message, $queueMessage->getMessage());
