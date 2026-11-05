@@ -1,5 +1,7 @@
 # Queue
 
+> **Archived:** this package is no longer maintained.
+
 [![Travis CI](https://api.travis-ci.org/qlimix/queue.svg?branch=master)](https://travis-ci.org/qlimix/queue)
 [![Coveralls](https://img.shields.io/coveralls/github/qlimix/queue.svg)](https://coveralls.io/github/qlimix/queue)
 [![Packagist](https://img.shields.io/packagist/v/qlimix/queue.svg)](https://packagist.org/packages/qlimix/queue)
